@@ -23,22 +23,21 @@ public class Main {
         //codigo para calcular el tiempo de desanso recomendado
         double liftedWeight= 80.0;
         int repetitions= 10;
-        int series=4;
+
 
        if(repetitions<=0){
            System.out.println("NO HICISTE NI UNA REPETICION");
        }
        else if(repetitions>=1 && repetitions<=5) {
-           System.out.printf("Descanzo 3 minutos");
+           System.out.println("Descanzo 3 minutos");
 
         }
        else if(repetitions>=6 && repetitions<=12) {
-           System.out.printf("Descanzo 1 a 2 minutos por la hipertrofia");
+           System.out.println("Descanso 1 a 2 minutos por la hipertrofia");
 
        }else{
-           System.out.println("Tu quieres ganar resistencia muscular, descanza 45 segundos");
+           System.out.println("Tu quieres ganar resistencia muscular, descansa 45 segundos");
        }
-        System.out.println(" ");
         System.out.println("========DATA OF USERS=========");
         System.out.println("My liftedWeight is :"+liftedWeight);
         System.out.println("My repetitions :"+ repetitions);
