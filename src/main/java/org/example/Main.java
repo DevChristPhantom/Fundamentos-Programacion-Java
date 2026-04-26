@@ -20,6 +20,8 @@ public class Main {
 
                 "Mis Horas de Estudio: " + hoursOfStudy);
   */
+
+       /*
         //codigo para calcular el tiempo de desanso recomendado
         double liftedWeight= 80.0;
         int repetitions= 10;
@@ -42,7 +44,34 @@ public class Main {
         System.out.println("My liftedWeight is :"+liftedWeight);
         System.out.println("My repetitions :"+ repetitions);
 
-    }
 
-}
+        */
 
+                double liftedWeight = 80.0;
+                int series = 4;
+                int repetitions = 10;
+
+                System.out.println("======== INICIANDO ENTRENAMIENTO =========");
+                System.out.printf("Peso: %.1f kg | Objetivo: %d series de %d repeticiones\n\n", liftedWeight, series, repetitions);
+
+
+                for (int i = 1; i <= series; i++) {
+
+
+                    System.out.println("Completando serie " + i + " con " + repetitions + " repeticiones.");
+
+
+                    if (repetitions <= 0) {
+                        System.out.println("-> Error: El número de repeticiones no es válido.");
+                    } else if (repetitions >= 1 && repetitions <= 5) {
+                        System.out.println("-> Objetivo: Fuerza. Descanso: 3 a 5 minutos.\n");
+                    } else if (repetitions >= 6 && repetitions <= 12) {
+                        System.out.println("-> Objetivo: Hipertrofia. Descanso: 1 a 2 minutos.\n");
+                    } else {
+                        System.out.println("-> Objetivo: Resistencia. Descanso: 45 a 60 segundos.\n");
+                    }
+                }
+
+                System.out.println("======== ENTRENAMIENTO FINALIZADO =========");
+            }
+        }
