@@ -1,77 +1,23 @@
 package org.example;
 
+import javax.swing.text.rtf.RTFEditorKit;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    public static void main(String[] args){
-/*
-        //declaramos las variables
-        String names= "Christian Wilber";
-        String lastname="Atamari Hancco";
-        int age = 24;
-        double hoursOfStudy=4.0 ;
+    public static void main(String[] args) {
 
+        Usuarios myUser = new Usuarios("CHRISTIAN",24,84);
+        Usuarios myUser1= new Usuarios("Naye",30,70);
 
-        System.out.println("=============== Hello and welcome to MY DATA ===============");
+        myUser1.mostrarPerfilUser();
+        myUser.mostrarPerfilUser();
 
+        Rutina myRutina = new Rutina("Press de Banca",10,4);
+        Rutina myRuntina1 = new Rutina("Press Militar",12,4);
 
-        System.out.println("Mi NOMBRE ES: " + names + " " + lastname + "\n" +
-                "MI Edad: " + age + "\n" +
+        myRutina.mostrarRutina();
+        myRuntina1.mostrarRutina();
+    }
 
-                "Mis Horas de Estudio: " + hoursOfStudy);
-  */
-
-       /*
-        //codigo para calcular el tiempo de desanso recomendado
-        double liftedWeight= 80.0;
-        int repetitions= 10;
-
-
-       if(repetitions<=0){
-           System.out.println("NO HICISTE NI UNA REPETICION");
-       }
-       else if(repetitions>=1 && repetitions<=5) {
-           System.out.println("Descanzo 3 minutos");
-
-        }
-       else if(repetitions>=6 && repetitions<=12) {
-           System.out.println("Descanso 1 a 2 minutos por la hipertrofia");
-
-       }else{
-           System.out.println("Tu quieres ganar resistencia muscular, descansa 45 segundos");
-       }
-        System.out.println("========DATA OF USERS=========");
-        System.out.println("My liftedWeight is :"+liftedWeight);
-        System.out.println("My repetitions :"+ repetitions);
-
-
-        */
-
-                double liftedWeight = 80.0;
-                int series = 4;
-                int repetitions = 10;
-
-                System.out.println("======== INICIANDO ENTRENAMIENTO =========");
-                System.out.printf("Peso: %.1f kg | Objetivo: %d series de %d repeticiones\n\n", liftedWeight, series, repetitions);
-
-
-                for (int i = 1; i <= series; i++) {
-
-
-                    System.out.println("Completando serie " + i + " con " + repetitions + " repeticiones.");
-
-
-                    if (repetitions <= 0) {
-                        System.out.println("-> Error: El número de repeticiones no es válido.");
-                    } else if (repetitions >= 1 && repetitions <= 5) {
-                        System.out.println("-> Objetivo: Fuerza. Descanso: 3 a 5 minutos.\n");
-                    } else if (repetitions >= 6 && repetitions <= 12) {
-                        System.out.println("-> Objetivo: Hipertrofia. Descanso: 1 a 2 minutos.\n");
-                    } else {
-                        System.out.println("-> Objetivo: Resistencia. Descanso: 45 a 60 segundos.\n");
-                    }
-                }
-
-                System.out.println("======== ENTRENAMIENTO FINALIZADO =========");
-            }
-        }
+}
