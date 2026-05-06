@@ -7,17 +7,10 @@ import javax.swing.text.rtf.RTFEditorKit;
 public class Main {
     public static void main(String[] args) {
 
-        Usuarios myUser = new Usuarios("CHRISTIAN",24,84);
-        Usuarios myUser1= new Usuarios("Naye",30,70);
+        EjerciciosCardio maqTrotar = new EjerciciosCardio("CINTA DE CORRER",500,100);
 
-        myUser1.mostrarPerfilUser();
-        myUser.mostrarPerfilUser();
-
-        Rutina myRutina = new Rutina("Press de Banca",10,4);
-        Rutina myRuntina1 = new Rutina("Press Militar",12,4);
-
-        myRutina.mostrarRutina();
-        myRuntina1.mostrarRutina();
+        //LLAMAMOS AL METODO PADRE
+        maqTrotar.mostrarResumen();
     }
 
 }
